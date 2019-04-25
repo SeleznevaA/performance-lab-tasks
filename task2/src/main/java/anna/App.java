@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
         List<Point> points;
         try {
-            points = readPoints("C:/Users/Anna/Desktop/performance-lab/task2/input.txt");
+            points = readPoints(args[0]);
         } catch (IOException e) {
             throw new IllegalArgumentException(e);
         }
